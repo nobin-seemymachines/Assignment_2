@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body id="event">
+    <h1>MULTIMEDIA PAGE</h1>
+
+
+    <!-- 1 -->
+    <div class="event">
+        <h2>onClick Event :
+            <button onclick="ChangeColor()">Click Me</button>
+        </h2>
+    </div>
+
+    <div class="elements">
+
+        <!-- 2 -->
+        <div>
+            <h2>HTML5 Form</h2>
+            <div class="form">
+                <h2>Feedback Form</h2>
+                <form>
+                    <div class="label">
+                        <label for="name" class="label">NAME : </label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="label">
+                        <label for="email" class="label">Email ID : </label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="label">
+                        <label for="comment">Comments :&nbsp; </label>
+                        <textarea id="comment" cols="21" rows="5" required minlength="10"></textarea>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div>
+            <h2>
+                HTML5 Graphics
+            </h2>
+            <canvas width="400px" height="200px" id="myCanvas"></canvas>
+        </div>
+
+        <!-- 4 -->
+        <div>
+            <h2>Media Integration</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU?si=-BSgZDp5HiBnwp0v"
+                title="YouTube video player" frameborder="3" allowfullscreen></iframe>
+                <p class="description">HTML Tutorial for Beginners <br> Learn HTML for a career in web development. <br> This HTML tutorial teaches you everything you need to get started.</p>
+        </div>
+
+    </div>
+</body>
+
+<script>
+    function ChangeColor() {
+        document.getElementById("event").style.color = "yellow"
+        document.getElementById("event").style.backgroundColor = "black"
+    }
+
+    const canvas = document.getElementById("myCanvas")
+    const ctx = canvas.getContext("2d")
+
+    ctx.beginPath()
+    ctx.rect(100, 50, 200, 100)
+    ctx.stroke()
+</script>
+
+</html>

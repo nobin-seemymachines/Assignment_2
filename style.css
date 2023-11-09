@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+}
+
+.event {
+    margin-top: 100px;
+}
+
+.elements {
+    margin: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+}
+
+.label {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form h2 {
+    margin-bottom: 30px;
+}
+
+.button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+canvas {
+    border: 1px solid grey;
+}
+
+.description{
+    text-align: left;
+}
